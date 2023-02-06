@@ -1,2 +1,5 @@
-package Model;public enum RoomType {
+package Model;
+
+public enum RoomType {
+    SINGLE,DOUBLE;
 }
