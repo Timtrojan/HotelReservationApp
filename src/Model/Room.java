@@ -30,14 +30,13 @@ public class Room implements IRoom {
     public Boolean isFree() {
         return true;
     }
-    @Override
-    public String toString(){
 
-        return String.format("""
-                Room Number: %s
-                Price Per Night:%s
-                Selected Room Type: %s
-                
-                """, roomNumber,roomPrice,roomType);
+    @Override
+    public String toString() {
+        return "Room{" +
+                "roomNumber='" + roomNumber + '\'' +
+                ", roomPrice=" + roomPrice +
+                ", roomType=" + roomType +
+                '}';
     }
 }

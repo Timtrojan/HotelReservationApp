@@ -20,13 +20,13 @@ public class Customer {
     }
 
     public String getFirstName() {
-        return firstName;
+        return this.firstName;
     }
 
 
 
     public String getLastName() {
-        return lastName;
+        return this.lastName;
     }
 
 
@@ -34,14 +34,14 @@ public class Customer {
     public String getEmail() {
         return email;
     }
-    @Override
-    public String toString(){
 
-        return String.format("""
-                First Name: %s
-                Last Name: %s
-                Email Address: %s
-                """, firstName,lastName,email);
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 
 }

@@ -1,9 +1,9 @@
 package Model;
 
 public class FreeRoom extends Room{
-    private String roomNumber;
-    private RoomType roomType;
-    private Double roomPrice;
+    private final String roomNumber;
+    private final RoomType roomType;
+    private final Double roomPrice;
 
     public FreeRoom(String roomNumber, Double roomPrice, RoomType roomType) {
         super(roomNumber, roomPrice, roomType);

@@ -3,7 +3,7 @@ package Model;
 import java.util.Date;
 
 public class Reservation {
-    private Customer customer;
+    private final Customer customer;
 
     public Reservation(Customer customer, IRoom room, Date checkInDate, Date checkOutDate) {
         this.customer = customer;
@@ -28,22 +28,11 @@ public class Reservation {
 
 
 
-    @Override
-    public String toString(){
-        return String.format("""
-                Here are Your Reservation Details
-                
-                
-                """);
-    }
-
     public Customer getCustomer() {
         return customer;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
+
 
     public IRoom getRoom() {
         return room;
@@ -59,5 +48,15 @@ public class Reservation {
 
     public void setCheckInDate(Date checkInDate) {
         this.checkInDate = checkInDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "customer=" + customer +
+                ", room=" + room +
+                ", checkInDate=" + checkInDate +
+                ", checkOutDate=" + checkOutDate +
+                '}';
     }
 }
